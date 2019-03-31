@@ -13,7 +13,7 @@ class ParkingGarage
 
   def attempt_park_vehicle?(vehicle)
     has_parked = @levels.find { |level| level.attempt_add_a_vehicle?(vehicle) }
-    has_parked ? true : "Sorry valued customer, there is no space available."
+    has_parked ? "Vehicle succesfully parked!" : "Sorry valued customer, there is no space available."
   end
 
 end
